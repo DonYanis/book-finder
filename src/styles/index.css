@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.over {
+    overflow-y: hidden;
+}
+
+body {
+    margin-top: 80px;
+}
+
+.logo-text , *{
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.theme-btn {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    padding-left: 10px;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border : 1px solid rgb(192, 190, 190);
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.5) ;
+}
+
+.book {
+    border : 1px solid rgb(192, 190, 190);
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.5) ;
+}
+
+.loading-circle {       
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+html{
+    height: calc(100% - 80px);
+}  
+
+body, #root, .main{
+    height: 100%;
+}
+
+.info p, .info a {
+    padding : 10px;
+}
